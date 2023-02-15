@@ -10,10 +10,10 @@ const generateImage = async (req, res) => {
   const { prompt, size } = req.body;
 
   const imageSize =
-    sizw === "small" ? "256x256" : size === "medium" ? "512x512" : "1024x1024";
+    size === "small" ? "256x256" : size === "medium" ? "512x512" : "1024x1024";
   try {
     const response = await openai.createImage({
-      prompt: "Acient greek kid from 2000 BC",
+      prompt: prompt,
       n: 1,
       size: imageSize,
     });

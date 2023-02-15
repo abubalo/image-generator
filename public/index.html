@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/spinner.css" />
+    <script src="./js/main.js" defer></script>
+    <title>OpenAI image Generator</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <h1 class="logo">Image Generator</h1>
+        </nav>
+      </header>
+      <section>
+        <div class="form-cotainer">
+          <form action="">
+            <h1>Write a prompt</h1>
+            <div class="form-group">
+              <input
+                type="search"
+                name=""
+                placeholder="Eg. A rabbit dancing on a rainbow while holding a plate"
+                id="prompt"
+              />
+              <small class="error">ee</small>
+            </div>
+            <div class="form-group">
+              <select name="" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <button type="submit" class="button">Generate</button>
+          </form>
+        </div>
+        <div class="result">
+            <img src="" alt="" id="image" />
+        </div>
+        <div class="spinner-container">
+
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+  </body>
+</html>
